@@ -1,1 +1,22 @@
-@import "tailwindcss"
+@import 'tailwindcss';
+
+@theme {
+  --color-primary-black: #1f1f21;
+  --color-secondary-black: #2c2c2e;
+  --color-primary-blue: #649ef0;
+}
+
+@font-face {
+  font-family: 'Atlassian Sans';
+  src: url('public/AtlassianSans-latin.woff2') format('woff2');
+}
+
+:root {
+  font-family: 'Atlassian Sans', ui-sans-serif, -apple-system, sans-serif;
+
+  @apply bg-primary-black text-gray-400 text-sm;
+}
+
+.brightness-on-event {
+  @apply hover:brightness-105 focus:brightness-105 transition;
+}
