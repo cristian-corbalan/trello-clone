@@ -1,33 +1,11 @@
-import { useState } from "react";
+import { useSelector } from "react-redux";
 import BoardCard from "../components/boards/BoardCard.tsx";
 import BoardList from "../components/boards/BoardList.tsx";
-import type { Board } from "../types/types.ts";
-
-const BOARDS: Board[] = [
-  {
-    id: 1,
-    title: "Tablero 01",
-    background: "white",
-  },
-  {
-    id: 2,
-    title: "Tablero 02",
-    background: "blue",
-  },
-  {
-    id: 3,
-    title: "Tablero 03",
-    background: "red",
-  },
-  {
-    id: 4,
-    title: "Tablero 04",
-    background: "purple",
-  },
-];
+import type { RootState } from "../store/store.ts";
 
 const HomePage: React.FC = () => {
-  const [boards, setBoards] = useState(BOARDS);
+  // const [boards, setBoards] = useState(BOARDS);
+  const boards = useSelector((state: RootState) => state.boards);
 
   return (
     <>
