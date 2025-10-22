@@ -9,6 +9,11 @@
     }
   ],
   "compilerOptions": {
-    "allowUmdGlobalAccess": true
+    "allowUmdGlobalAccess": true,
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    }
   }
 }
