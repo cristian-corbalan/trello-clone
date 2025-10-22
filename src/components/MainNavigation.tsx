@@ -1,32 +1,9 @@
-import { useDispatch, useSelector } from "react-redux";
-import { addBoard } from "../store/boardsSlice.ts";
-import type { RootState } from "../store/store.ts";
-import type { Board } from "../types/types.ts";
+import BoardButtonModal from "./boards/BoardButtonModal.tsx";
 import GitHubIcon from "./icons/GitHubIcon.tsx";
 import TrelloIcon from "./icons/TrelloIcon.tsx";
 import SearchForm from "./SearchForm.tsx";
 
 const MainNavigation: React.FC = () => {
-  const boards = useSelector((state: RootState) => state.boards);
-  const dispatch = useDispatch();
-
-  function handleCreateBoard() {
-    const title = prompt("Ingrese el título.") ?? "";
-
-    let id = Math.random();
-    while (boards.some((board) => board.id === id)) {
-      id = Math.random();
-    }
-
-    const board: Board = {
-      id: id,
-      title,
-      background: "white",
-    };
-
-    dispatch(addBoard(board));
-  }
-
   return (
     <nav className="flex justify-between items-center gap-2 p-2 border-b-zinc-700 border-b">
       <h1 className="font-bold text-lg text-white">
@@ -42,12 +19,7 @@ const MainNavigation: React.FC = () => {
 
       <div className="flex items-center justify-center gap-2 flex-1">
         <SearchForm />
-        <button
-          onClick={handleCreateBoard}
-          className="rounded-sm font-semibold bg-primary-blue text-primary-black py-2 px-4 brightness-on-event hover:cursor-pointer"
-        >
-          Crear
-        </button>
+        <BoardButtonModal />
       </div>
 
       <a
