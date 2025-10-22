@@ -4,6 +4,7 @@
   --color-primary-black: #1f1f21;
   --color-secondary-black: #2c2c2e;
   --color-primary-blue: #649ef0;
+  --color-tertiary-black: #37383b;
 }
 
 @font-face {
@@ -18,5 +19,5 @@
 }
 
 .brightness-on-event {
-  @apply hover:brightness-105 focus:brightness-105 transition;
+  @apply not-disabled:hover:brightness-105 not-disabled:focus:brightness-105 transition;
 }
