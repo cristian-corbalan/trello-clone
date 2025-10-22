@@ -1,8 +1,13 @@
 export interface Board {
   id: number;
   title: string;
-  background: BoardBackground;
+  background: BoardBackgroundName;
   lastVisited?: Date;
 }
 
-export type BoardBackground = "white" | "blue" | "purple" | "red";
+export type BoardBackgroundName = "white" | "blue" | "purple" | "red";
+
+export interface BoardBackground {
+  name: string;
+  className: string;
+}
