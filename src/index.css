@@ -1,1 +1,32 @@
 @import 'tailwindcss';
+
+
+@theme {
+  --color-black-neutral-light: #242528;
+  --color-black-neutral-base: #1f1f21;
+  --color-black-neutral-dark: #18191a;
+  --color-black-neutral-darkest: #101204;
+  --color-black-neutral-hover: #e3e4f21f;
+
+  --color-blue-neutral-base: #649ef0;
+  --color-blue-neutral-light: #8fb8f6;
+  --color-blue-neutral-dark: #213354;
+  --color-blue-neutral-darkest: #16294c;
+
+  --color-white-neutral-base: #a9abaf;
+  --color-white-opacity-base: #ffffff3d;
+  --color-white-opacity-hover: #00000028;
+
+
+}
+
+@font-face {
+  font-family: 'Atlassian Sans';
+  src: url('/AtlassianSans-latin.woff2') format('woff2');
+}
+
+:root {
+  font-family: 'Atlassian Sans', ui-sans-serif, -apple-system, sans-serif;
+
+  @apply bg-black-neutral-base text-white-neutral-base;
+}
