@@ -29,7 +29,7 @@ export default function MainNavigation() {
         target="_blank"
         className="rounded-sm bg-transparent hover:bg-black-neutral-hover focus-visible:bg-black-neutral-hover p-1"
       >
-        <GitHubIcon class="size-6" />
+        <GitHubIcon />
         <span className="sr-only">Ir al repositorio de GitHub (abre una nueva pestaña)</span>
       </a>
     </nav>
