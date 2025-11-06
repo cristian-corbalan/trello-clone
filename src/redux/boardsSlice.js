@@ -1,25 +1,26 @@
 import { createSlice } from '@reduxjs/toolkit';
+import { BOARD_GRADIENTS } from '../util/constants.js';
 
 const TEST_BOARDS = [
   {
-    id: 1,
+    id: crypto.randomUUID(),
     title: 'Tablero 01',
-    background: 'bg-board-blue',
+    background: BOARD_GRADIENTS[0],
   },
   {
-    id: 2,
+    id: crypto.randomUUID(),
     title: 'Tablero 02',
-    background: 'bg-gradient-board-bubbles',
+    background: BOARD_GRADIENTS[2],
   },
   {
-    id: 3,
+    id: crypto.randomUUID(),
     title: 'Tablero 03',
-    background: 'bg-gradient-board-volcano',
+    background: BOARD_GRADIENTS[4],
   },
   {
-    id: 4,
+    id: crypto.randomUUID(),
     title: 'Tablero 04',
-    background: 'bg-gradient-board-booty',
+    background: BOARD_GRADIENTS[6],
   },
 ];
 
