@@ -1,6 +1,8 @@
 @import 'tailwindcss';
 
 @theme {
+  --color-black-neutral-lightest: #37383b;
+  --color-black-neutral-lighter: #2b2c2f;
   --color-black-neutral-light: #242528;
   --color-black-neutral-base: #1f1f21;
   --color-black-neutral-dark: #18191a;
