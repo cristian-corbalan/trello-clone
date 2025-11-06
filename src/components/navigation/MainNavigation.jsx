@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router';
+import BoardButtonModalForm from '../boards/BoardButtonModalForm.jsx';
 import GitHubIcon from '../icons/GitHubIcon.jsx';
 import TrelloIcon from '../icons/TrelloIcon.jsx';
 import SearchForm from './SearchForm.jsx';
@@ -19,9 +20,7 @@ export default function MainNavigation() {
 
       <div className="flex flex-1 items-center justify-center gap-2">
         <SearchForm />
-        <button className="bg-blue-neutral-base text-black-neutral-base hover:bg-blue-neutral-light focus-visible:bg-blue-neutral-light cursor-pointer rounded-sm px-4 py-1.5 font-semibold">
-          Crear
-        </button>
+        <BoardButtonModalForm />
       </div>
 
       <a
