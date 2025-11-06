@@ -1,6 +1,5 @@
 @import 'tailwindcss';
 
-
 @theme {
   --color-black-neutral-light: #242528;
   --color-black-neutral-base: #1f1f21;
@@ -16,8 +15,6 @@
   --color-white-neutral-base: #a9abaf;
   --color-white-opacity-base: #ffffff3d;
   --color-white-opacity-hover: #00000028;
-
-
 }
 
 @font-face {
@@ -26,7 +23,11 @@
 }
 
 :root {
-  font-family: 'Atlassian Sans', ui-sans-serif, -apple-system, sans-serif;
+  font-family:
+    'Atlassian Sans',
+    ui-sans-serif,
+    -apple-system,
+    sans-serif;
 
   @apply bg-black-neutral-base text-white-neutral-base;
 }
