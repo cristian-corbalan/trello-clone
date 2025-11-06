@@ -4,7 +4,7 @@ export default function BoardCard({ board }) {
   return (
     <article className="flex h-full flex-col">
       <Link to="/" className="shadow-black-neutral group flex flex-1 flex-col overflow-hidden rounded-lg">
-        <div className="min-h-20 bg-gray-400 group-hover:brightness-70 group-focus-visible:brightness-70">
+        <div className={'min-h-20 group-hover:brightness-70 group-focus-visible:brightness-70 ' + board.background}>
           {/*  Cover :) */}
         </div>
         <span className="bg-black-neutral-base block grow-1 p-2 text-sm">

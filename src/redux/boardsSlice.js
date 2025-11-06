@@ -4,22 +4,22 @@ const TEST_BOARDS = [
   {
     id: 1,
     title: 'Tablero 01',
-    background: 'white',
+    background: 'bg-board-blue',
   },
   {
     id: 2,
     title: 'Tablero 02',
-    background: 'blue',
+    background: 'bg-gradient-board-bubbles',
   },
   {
     id: 3,
     title: 'Tablero 03',
-    background: 'red',
+    background: 'bg-gradient-board-volcano',
   },
   {
     id: 4,
     title: 'Tablero 04',
-    background: 'purple',
+    background: 'bg-gradient-board-booty',
   },
 ];
 
